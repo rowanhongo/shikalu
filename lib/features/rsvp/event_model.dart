@@ -1,19 +1,17 @@
 // Defines the Event data structure
 // Contains mock ALU events for testing
-// This file defines what an Event looks like in ShikALU
-// Think of it as a blueprint for every event card you see
 
 class Event {
-  final String id;           // Unique ID for each event
-  final String title;        // Event name e.g. "CBC Hackathon"
-  final String category;     // e.g. "Hackathon", "Workshop"
-  final String date;         // e.g. "June 19, 2026"
-  final String time;         // e.g. "4:00 PM"
-  final String location;     // e.g. "ALU Kigali"
-  final String description;  // Full event description
-  final String organizer;    // Who posted it
-  int attendeeCount;         // Number of people attending (can change)
-  bool isRsvped;             // Has this student RSVPed? true or false
+  final String id;           
+  final String title;        
+  final String category;     
+  final String date;         
+  final String time;         
+  final String location;    
+  final String description;  
+  final String organizer;    
+  int attendeeCount;         
+  bool isRsvped;             
 
   Event({
     required this.id,
@@ -25,12 +23,12 @@ class Event {
     required this.description,
     required this.organizer,
     required this.attendeeCount,
-    this.isRsvped = false,   // Default is false - not registered yet
+    this.isRsvped = false,   // Default is false cause its not registered yet
   });
 }
 
-// This is our mock data 
-// Based on REAL ALU events!
+// our mock data 
+// Based on ALU events
 List<Event> mockEvents = [
   Event(
     id: '1',
@@ -38,7 +36,7 @@ List<Event> mockEvents = [
     category: 'Hackathon',
     date: 'May 25-28, 2026',
     time: '9:00 AM',
-    location: 'Kenya-Burundi Enterprise Commons, ALU Kigali',
+    location: 'Kenya-Burundi ,Enterprise Commons-ALU Kigali',
     description: 'Build something that matters. Theme: AI for Social Impact. Tracks include Biology & Health, Economic Empowerment, Governance, and more. Prizes include USD 1,500 in API credits.',
     organizer: 'Claude Builder Club',
     attendeeCount: 41,
@@ -61,7 +59,7 @@ List<Event> mockEvents = [
     date: 'Tomorrow, 10:00 AM',
     time: '10:00 AM',
     location: 'ALU Innovation Lab',
-    description: 'A hands-on workshop to learn design thinking methodology and apply it to real ALU community challenges.',
+    description: 'A hands on workshop to learn design thinking methodology and apply it to real ALU community challenges.',
     organizer: 'ALU Entrepreneurship Club',
     attendeeCount: 28,
   ),
