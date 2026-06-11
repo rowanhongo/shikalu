@@ -6,20 +6,20 @@ class FeedScreen extends StatefulWidget {
   const FeedScreen({super.key});
 
   @override
-  State<<FeedScreen> createState() => _FeedScreenState();
+  State<FeedScreen> createState() => _FeedScreenState();
 }
 
-class _FeedScreenState extends State<<FeedScreen> {
+class _FeedScreenState extends State<FeedScreen> {
   String selectedCategory = 'All';
 
-  List<<Opportunity> get filteredOpportunities {
+  List<Opportunity> get filteredOpportunities {
     if (selectedCategory == 'All') return MockOpportunities.all;
     return MockOpportunities.all
         .where((o) => o.category.toLowerCase() == selectedCategory.toLowerCase())
         .toList();
   }
 
-  List<<Opportunity> get featuredOpportunities {
+  List<Opportunity> get featuredOpportunities {
     return MockOpportunities.all.where((o) => o.isFeatured).toList();
   }
 
