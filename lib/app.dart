@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'features/feed/screens/feed_screen.dart';
 import 'features/profile/screens/profile_screen.dart';
+import 'features/chat/chat_screen.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -38,7 +39,7 @@ class _MainShellState extends State<MainShell> {
           FeedScreen(),
           _PlaceholderScreen(label: 'Discover'),
           _PlaceholderScreen(label: 'Communities'),
-          _PlaceholderScreen(label: 'Jams'),
+          ChatScreen(), // Our new chat screen!
           ProfileScreen(),
         ],
       ),
@@ -71,9 +72,9 @@ class _MainShellState extends State<MainShell> {
             label: 'Communities',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.music_note_outlined),
-            activeIcon: Icon(Icons.music_note),
-            label: 'Jams',
+            icon: Icon(Icons.chat_outlined),
+            activeIcon: Icon(Icons.chat),
+            label: 'Chat',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person_outline),
