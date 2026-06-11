@@ -55,7 +55,7 @@ class ProfileScreen extends StatelessWidget {
             style: TextStyle(
               fontSize: 22,
               fontWeight: FontWeight.bold,
-              color: Color(0xFF6C63FF),
+              color: Color(0xFFB8452D),
             ),
           ),
           const Spacer(),
@@ -137,7 +137,7 @@ class ProfileScreen extends StatelessWidget {
                     gradient: LinearGradient(
                       begin: Alignment.topLeft,
                       end: Alignment.bottomRight,
-                      colors: [Color(0xFF6C63FF), Color(0xFF9575CD)],
+                      colors: [Color(0xFFB8452D), Color(0xFF9575CD)],
                     ),
                   ),
                   child: const Center(
@@ -202,8 +202,8 @@ class ProfileScreen extends StatelessWidget {
             OutlinedButton(
               onPressed: () {},
               style: OutlinedButton.styleFrom(
-                foregroundColor: const Color(0xFF6C63FF),
-                side: const BorderSide(color: Color(0xFF6C63FF)),
+                foregroundColor: const Color(0xFFB8452D),
+                side: const BorderSide(color: Color(0xFFB8452D)),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(24),
                 ),
@@ -368,15 +368,15 @@ class ProfileScreen extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 7),
       decoration: BoxDecoration(
-        color: const Color(0xFF6C63FF).withOpacity(0.08),
-        borderRadius: BorderRadius.circular(20),
-        border: Border.all(color: const Color(0xFF6C63FF).withOpacity(0.3)),
+        color: const Color(0xFFB8452D).withOpacity(0.08),
+        borderRadius: BorderRadius.circular(12),
+        border: Border.all(color: const Color(0xFFB8452D).withOpacity(0.3)),
       ),
       child: Text(
         label,
         style: const TextStyle(
           fontSize: 12,
-          color: Color(0xFF6C63FF),
+          color: Color(0xFFB8452D),
           fontWeight: FontWeight.w500,
         ),
       ),
@@ -413,7 +413,7 @@ class ProfileScreen extends StatelessWidget {
         children: [
           Row(
             children: [
-              const Icon(Icons.group_outlined, color: Color(0xFF6C63FF), size: 20),
+              const Icon(Icons.group_outlined, color: Color(0xFFB8452D), size: 20),
               const SizedBox(width: 6),
               const Expanded(
                 child: Text(
@@ -435,7 +435,7 @@ class ProfileScreen extends StatelessWidget {
                 child: const Text(
                   'View All',
                   style: TextStyle(
-                    color: Color(0xFF6C63FF),
+                    color: Color(0xFFB8452D),
                     fontSize: 12,
                     fontWeight: FontWeight.w600,
                   ),
@@ -480,10 +480,10 @@ class ProfileScreen extends StatelessWidget {
             width: 46,
             height: 46,
             decoration: BoxDecoration(
-              color: const Color(0xFF6C63FF).withOpacity(0.1),
-              borderRadius: BorderRadius.circular(10),
+              color: const Color(0xFFB8452D).withOpacity(0.1),
+              borderRadius: BorderRadius.circular(12),
             ),
-            child: Icon(icon, color: const Color(0xFF6C63FF), size: 22),
+            child: Icon(icon, color: const Color(0xFFB8452D), size: 22),
           ),
           const SizedBox(width: 12),
           Expanded(
@@ -631,7 +631,7 @@ class ProfileScreen extends StatelessWidget {
   }
 
   Widget _buildAvatarStack() {
-    const colors = [Color(0xFF6C63FF), Color(0xFF00BFA6), Color(0xFFFF6584)];
+    const colors = [Color(0xFFB8452D), Color(0xFF00BFA6), Color(0xFFFF6584)];
     return SizedBox(
       width: 52,
       height: 22,
@@ -658,7 +658,7 @@ class ProfileScreen extends StatelessWidget {
   Widget _buildSectionHeader(IconData icon, String title) {
     return Row(
       children: [
-        Icon(icon, color: const Color(0xFF6C63FF), size: 20),
+        Icon(icon, color: const Color(0xFFB8452D), size: 20),
         const SizedBox(width: 6),
         Text(
           title,

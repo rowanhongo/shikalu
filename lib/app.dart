@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
       title: 'ShikALU',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF6C63FF)),
+        colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFFB8452D)),
         useMaterial3: true,
       ),
       home: const MainShell(),
@@ -47,7 +47,7 @@ class _MainShellState extends State<MainShell> {
         currentIndex: _selectedIndex,
         onTap: (index) => setState(() => _selectedIndex = index),
         type: BottomNavigationBarType.fixed,
-        selectedItemColor: const Color(0xFF6C63FF),
+        selectedItemColor: const Color(0xFFB8452D),
         unselectedItemColor: Colors.grey,
         selectedLabelStyle: const TextStyle(
           fontSize: 11,
@@ -101,7 +101,7 @@ class _PlaceholderScreen extends StatelessWidget {
           style: const TextStyle(
             fontSize: 24,
             fontWeight: FontWeight.bold,
-            color: Color(0xFF6C63FF),
+            color: Color(0xFFB8452D),
           ),
         ),
       ),

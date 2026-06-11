@@ -25,14 +25,14 @@ class _FeedScreenState extends State<FeedScreen> {
 
   Color _getCategoryColor(String category) {
     switch (category.toLowerCase()) {
-      case 'hackathon': return const Color(0xFF6C63FF);
+      case 'hackathon': return const Color(0xFFB8452D);
       case 'workshop': return const Color(0xFF00BFA6);
       case 'networking': return const Color(0xFFFF6584);
       case 'social': return const Color(0xFFFFB74D);
       case 'career': return const Color(0xFF4FC3F7);
       case 'leadership': return const Color(0xFF9575CD);
       case 'arts': return const Color(0xFFFF8A65);
-      default: return const Color(0xFF6C63FF);
+      default: return const Color(0xFFB8452D);
     }
   }
 
@@ -57,18 +57,18 @@ class _FeedScreenState extends State<FeedScreen> {
                           children: [
                             const Text(
                               'ShikALU',
-                              style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold, color: Color(0xFF6C63FF)),
+                              style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold, color: Color(0xFFB8452D)),
                             ),
                             const SizedBox(width: 8),
                             Container(
                               padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                               decoration: BoxDecoration(
-                                color: const Color(0xFF6C63FF).withOpacity(0.1),
+                                color: const Color(0xFFB8452D).withOpacity(0.1),
                                 borderRadius: BorderRadius.circular(8),
                               ),
                               child: const Text(
                                 'Feed',
-                                style: TextStyle(color: Color(0xFF6C63FF), fontSize: 12, fontWeight: FontWeight.bold),
+                                style: TextStyle(color: Color(0xFFB8452D), fontSize: 12, fontWeight: FontWeight.bold),
                               ),
                             ),
                           ],
@@ -84,14 +84,14 @@ class _FeedScreenState extends State<FeedScreen> {
                         borderRadius: BorderRadius.circular(12),
                         boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.06), blurRadius: 10, offset: const Offset(0, 4))],
                       ),
-                      child: const Icon(Icons.notifications_outlined, color: Color(0xFF6C63FF)),
+                      child: const Icon(Icons.notifications_outlined, color: Color(0xFFB8452D)),
                     ),
                     const SizedBox(width: 10),
                     Container(
                       width: 44,
                       height: 44,
                       decoration: BoxDecoration(
-                        color: const Color(0xFF6C63FF),
+                        color: const Color(0xFFB8452D),
                         borderRadius: BorderRadius.circular(12),
                         image: const DecorationImage(
                           image: NetworkImage('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200'),
@@ -131,10 +131,10 @@ class _FeedScreenState extends State<FeedScreen> {
                       Container(
                         padding: const EdgeInsets.all(8),
                         decoration: BoxDecoration(
-                          color: const Color(0xFF6C63FF).withOpacity(0.1),
+                          color: const Color(0xFFB8452D).withOpacity(0.1),
                           borderRadius: BorderRadius.circular(10),
                         ),
-                        child: const Icon(Icons.tune, color: Color(0xFF6C63FF), size: 18),
+                        child: const Icon(Icons.tune, color: Color(0xFFB8452D), size: 18),
                       ),
                     ],
                   ),
@@ -161,14 +161,14 @@ class _FeedScreenState extends State<FeedScreen> {
                         margin: const EdgeInsets.only(right: 10),
                         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
                         decoration: BoxDecoration(
-                          color: isSelected ? const Color(0xFF6C63FF) : Colors.white,
+                          color: isSelected ? const Color(0xFFB8452D) : Colors.white,
                           borderRadius: BorderRadius.circular(25),
                           border: Border.all(
-                            color: isSelected ? const Color(0xFF6C63FF) : Colors.grey[300]!,
+                            color: isSelected ? const Color(0xFFB8452D) : Colors.grey[300]!,
                             width: 1.5,
                           ),
                           boxShadow: isSelected
-                              ? [BoxShadow(color: const Color(0xFF6C63FF).withOpacity(0.3), blurRadius: 8, offset: const Offset(0, 4))]
+                              ? [BoxShadow(color: const Color(0xFFB8452D).withOpacity(0.3), blurRadius: 8, offset: const Offset(0, 4))]
                               : null,
                         ),
                         child: Text(
@@ -230,12 +230,12 @@ class _FeedScreenState extends State<FeedScreen> {
                     Container(
                       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                       decoration: BoxDecoration(
-                        color: const Color(0xFF6C63FF).withOpacity(0.1),
+                        color: const Color(0xFFB8452D).withOpacity(0.1),
                         borderRadius: BorderRadius.circular(20),
                       ),
                       child: Text(
                         '${filteredOpportunities.length} events',
-                        style: const TextStyle(color: Color(0xFF6C63FF), fontSize: 12, fontWeight: FontWeight.w600),
+                        style: const TextStyle(color: Color(0xFFB8452D), fontSize: 12, fontWeight: FontWeight.w600),
                       ),
                     ),
                   ],
@@ -535,12 +535,12 @@ class _FeedScreenState extends State<FeedScreen> {
                     Container(
                       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                       decoration: BoxDecoration(
-                        color: const Color(0xFF6C63FF).withOpacity(0.1),
+                        color: const Color(0xFFB8452D).withOpacity(0.1),
                         borderRadius: BorderRadius.circular(20),
                       ),
                       child: Text(
                         opportunity.category.toUpperCase(),
-                        style: const TextStyle(color: Color(0xFF6C63FF), fontSize: 11, fontWeight: FontWeight.bold),
+                        style: const TextStyle(color: Color(0xFFB8452D), fontSize: 11, fontWeight: FontWeight.bold),
                       ),
                     ),
                     const SizedBox(width: 8),
@@ -578,7 +578,7 @@ class _FeedScreenState extends State<FeedScreen> {
                         color: const Color(0xFF6C63FF).withOpacity(0.1),
                         borderRadius: BorderRadius.circular(20),
                       ),
-                      child: const Text('Follow', style: TextStyle(color: Color(0xFF6C63FF), fontWeight: FontWeight.w600, fontSize: 12)),
+                      child: const Text('Follow', style: TextStyle(color: Color(0xFFB8452D), fontWeight: FontWeight.w600, fontSize: 12)),
                     ),
                   ],
                 ),
@@ -709,14 +709,14 @@ class _FeedScreenState extends State<FeedScreen> {
                       ScaffoldMessenger.of(context).showSnackBar(
                         SnackBar(
                           content: Text('You\'ve RSVP\'d to ${opportunity.title}!'),
-                          backgroundColor: const Color(0xFF6C63FF),
+                          backgroundColor: const Color(0xFFB8452D),
                           behavior: SnackBarBehavior.floating,
                           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
                         ),
                       );
                     },
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color(0xFF6C63FF),
+                      backgroundColor: const Color(0xFFB8452D),
                       foregroundColor: Colors.white,
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
                       elevation: 0,
