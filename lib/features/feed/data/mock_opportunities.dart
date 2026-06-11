@@ -6,7 +6,7 @@ class MockOpportunities {
     'Social', 'Career', 'Leadership', 'Arts'
   ];
 
-  static List<<Opportunity> get all => [
+  static List<Opportunity> get all => [
     Opportunity(
       id: '1',
       title: 'Africa Tech Hackathon 2024',
