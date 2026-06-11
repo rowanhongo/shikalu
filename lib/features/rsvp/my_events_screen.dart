@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'event_model.dart';
 import 'rsvp_screen.dart';
 
-// This screen shows all events the student has RSVPed for
-// It's a StatelessWidget because it just displays data, no changes here
 
 class MyEventsScreen extends StatelessWidget {
   final List<Event> events; // Receives the full events list
@@ -13,7 +11,7 @@ class MyEventsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    // Filter - only show events where isRsvped is true
+    // Filter  only show events where isRsvped is true
     final myEvents = events.where((e) => e.isRsvped).toList();
 
     return Scaffold(
@@ -35,7 +33,7 @@ class MyEventsScreen extends StatelessWidget {
       ),
 
       body: myEvents.isEmpty
-          // Empty state - shown when no events are registered
+          // Empty state  shown when no events are registered
           ? Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -77,7 +75,7 @@ class MyEventsScreen extends StatelessWidget {
   // Event card widget for each registered event
   Widget _eventCard(BuildContext context, Event event) {
     return GestureDetector(
-      // Tap the card to go back to event detail
+      
       onTap: () {
         Navigator.push(
           context,
