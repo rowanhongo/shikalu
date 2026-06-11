@@ -36,8 +36,8 @@ class _RsvpScreenState extends State<RsvpScreen> {
       SnackBar(
         content: Text(
           widget.event.isRsvped
-              ? '✅ You are registered for ${widget.event.title}!'
-              : '❌ RSVP cancelled for ${widget.event.title}',
+              ? ' You are registered for ${widget.event.title}!'
+              : ' RSVP cancelled for ${widget.event.title}',
         ),
         backgroundColor: widget.event.isRsvped
             ? const Color(0xFFB5321A)
@@ -289,11 +289,6 @@ class _RsvpScreenState extends State<RsvpScreen> {
 
             const Divider(thickness: 1),
 
-            // =====================
-            // LIVE DISCUSSION SECTION
-            // TODO: Rowan's chat widget goes here
-            // =====================
-
             const SizedBox(height: 80),
           ],
         ),
@@ -367,7 +362,7 @@ class _RsvpScreenState extends State<RsvpScreen> {
     );
   }
 
-  // Single avatar circle
+  // Single person circle
   Widget _avatar(double left, Color color) {
     return Positioned(
       left: left,
